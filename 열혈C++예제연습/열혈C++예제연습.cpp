@@ -1,4 +1,4 @@
-﻿
+﻿#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 //#include "Test01_1.h"
 //#include "Test01_2.h"
@@ -9,8 +9,13 @@
 //#include "Test02_3.h"
 //#include "Test02_4.h"
 
-#include "Test03_1.h"
-#include "Test03_2.h"
+//#include "Test03_1.h"
+//#include "Test03_2.h"
+
+//#include "Test04_2.h"
+//#include "Test04_3.h"
+
+#include "Test05_1.h"
 
 using namespace std;
 
@@ -37,7 +42,29 @@ int main()
    /* Test02_4::Q1().Print();
     Test02_4::Q2().Print();*/
     
-    Test03_1::Point().Print();
-    Test03_2::Q1().Print();
-    Test03_2::Q2_Printer().Print();
+    //Test03_1::Point().Print();
+    //Test03_2::Q1().Print();
+    //Test03_2::Q2_Printer().Print();
+
+    /*Test04_2::Ring ring;
+    ring.Init(1, 1, 4, 2, 2, 9);
+    ring.ShowRingInfo();*/
+
+    //using namespace Test04_3;
+    //NameCard manClerk("Lee", "ABCEng", "010-1111-2222", static_cast<int>(eComp_pos::CLERK));
+    //NameCard manSENIOR("Hong", "OrangeEng", "010-3333-4444", static_cast<int>(eComp_pos::SENIOR));
+    //NameCard manAssist("Kim", "SoGoodComp", "010-5555-6666", static_cast<int>(eComp_pos::ASSIST));
+    //manClerk.ShowNameCardInfo();
+    //manSENIOR.ShowNameCardInfo();
+    //manAssist.ShowNameCardInfo();
+
+    //using namespace Test05_1;
+    //NameCard manClerk("Lee", "ABCEng", "010-1111-2222", static_cast<int>(eComp_pos::CLERK));
+    //NameCard copy1 = manClerk;
+    //NameCard manSENIOR("Hong", "OrangeEng", "010-3333-4444", static_cast<int>(eComp_pos::SENIOR));
+    //NameCard copy2 = manSENIOR;
+    //copy1.ShowNameCardInfo();
+    //copy2.ShowNameCardInfo();
+
+
 }
