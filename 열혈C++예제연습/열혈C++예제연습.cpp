@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Test01_1.h"
 #include "Test01_2.h"
+#include "Test01_3.h"
 
 using namespace std;
 
@@ -13,5 +14,8 @@ int main()
     Q3(5).Print();
     Q4().Print();*/
 
-    Test01_2::Q1().Print();
+   // Test01_2::Q1().Print();
+
+    Test01_3::Q1().Print();
+    Test01_3::Q2().Print();
 }
