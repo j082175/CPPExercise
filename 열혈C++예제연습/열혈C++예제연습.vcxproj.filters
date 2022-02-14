@@ -9,18 +9,14 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="헤더 파일\Chap1">
       <UniqueIdentifier>{4e6fdc04-7951-441d-a074-d2ed254d70a4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{216e290b-b2b1-41e5-8823-0c38586c99c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="열혈C++예제연습.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Test01_1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -28,6 +24,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Test01_3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="열혈C++예제연습.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Test02_1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -39,6 +41,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Test01_3.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Test02_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

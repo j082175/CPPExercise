@@ -3,6 +3,7 @@
 #include "Test01_1.h"
 #include "Test01_2.h"
 #include "Test01_3.h"
+#include "Test02_1.h"
 
 using namespace std;
 
@@ -16,6 +17,11 @@ int main()
 
    // Test01_2::Q1().Print();
 
-    Test01_3::Q1().Print();
-    Test01_3::Q2().Print();
+ /*   Test01_3::Q1().Print();
+    Test01_3::Q2().Print();*/
+
+    //Test02_1::Q1(55).Print();
+    //Test02_1::Q3(10, 20).Print();
+
+
 }
