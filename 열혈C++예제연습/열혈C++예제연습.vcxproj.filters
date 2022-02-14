@@ -15,6 +15,12 @@
     <Filter Include="Main">
       <UniqueIdentifier>{216e290b-b2b1-41e5-8823-0c38586c99c3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Chap2">
+      <UniqueIdentifier>{13e33158-253a-4f57-86d1-ec475fdc6279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Chap3">
+      <UniqueIdentifier>{28791eef-9614-4e63-a98c-560a237d71e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test01_1.cpp">
@@ -32,18 +38,48 @@
     <ClCompile Include="Test02_1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Test02_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Test02_3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Test02_4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Test03_1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Test03_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Test01_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Test01_2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Test01_3.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Test02_2.h">
+      <Filter>헤더 파일\Chap2</Filter>
     </ClInclude>
     <ClInclude Include="Test02_1.h">
+      <Filter>헤더 파일\Chap2</Filter>
+    </ClInclude>
+    <ClInclude Include="Test01_1.h">
+      <Filter>헤더 파일\Chap1</Filter>
+    </ClInclude>
+    <ClInclude Include="Test01_2.h">
+      <Filter>헤더 파일\Chap1</Filter>
+    </ClInclude>
+    <ClInclude Include="Test01_3.h">
+      <Filter>헤더 파일\Chap1</Filter>
+    </ClInclude>
+    <ClInclude Include="Test02_3.h">
+      <Filter>헤더 파일\Chap2</Filter>
+    </ClInclude>
+    <ClInclude Include="Test02_4.h">
+      <Filter>헤더 파일\Chap2</Filter>
+    </ClInclude>
+    <ClInclude Include="Test03_1.h">
+      <Filter>헤더 파일\Chap3</Filter>
+    </ClInclude>
+    <ClInclude Include="Test03_2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

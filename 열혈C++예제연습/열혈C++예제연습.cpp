@@ -1,9 +1,16 @@
 ﻿
 #include <iostream>
-#include "Test01_1.h"
-#include "Test01_2.h"
-#include "Test01_3.h"
-#include "Test02_1.h"
+//#include "Test01_1.h"
+//#include "Test01_2.h"
+//#include "Test01_3.h"
+//
+//#include "Test02_1.h"
+//#include "Test02_2.h"
+//#include "Test02_3.h"
+//#include "Test02_4.h"
+
+#include "Test03_1.h"
+#include "Test03_2.h"
 
 using namespace std;
 
@@ -23,5 +30,14 @@ int main()
     //Test02_1::Q1(55).Print();
     //Test02_1::Q3(10, 20).Print();
 
+    //Test02_2::Q1().Print();
+    
+    //Test02_3::Q1().Print();
 
+   /* Test02_4::Q1().Print();
+    Test02_4::Q2().Print();*/
+    
+    Test03_1::Point().Print();
+    Test03_2::Q1().Print();
+    Test03_2::Q2_Printer().Print();
 }
