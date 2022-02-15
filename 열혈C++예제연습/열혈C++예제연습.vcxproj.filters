@@ -27,6 +27,12 @@
     <Filter Include="헤더 파일\Chap5">
       <UniqueIdentifier>{e3db003c-009f-4bdc-aba6-fdbe63eabc58}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Chap7">
+      <UniqueIdentifier>{b1b18d1b-f19c-450a-9502-ddc3cc195737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Chap8">
+      <UniqueIdentifier>{8ab6c3b1-a391-4dc5-bb81-655853ea98b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test01_1.cpp">
@@ -68,6 +74,15 @@
     <ClCompile Include="Test05_1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Test07_1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Test07_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Test08_1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Test02_2.h">
@@ -104,7 +119,16 @@
       <Filter>헤더 파일\Chap4</Filter>
     </ClInclude>
     <ClInclude Include="Test05_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Chap5</Filter>
+    </ClInclude>
+    <ClInclude Include="Test07_1.h">
+      <Filter>헤더 파일\Chap7</Filter>
+    </ClInclude>
+    <ClInclude Include="Test07_2.h">
+      <Filter>헤더 파일\Chap7</Filter>
+    </ClInclude>
+    <ClInclude Include="Test08_1.h">
+      <Filter>헤더 파일\Chap8</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

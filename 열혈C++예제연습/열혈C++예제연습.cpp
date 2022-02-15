@@ -15,12 +15,19 @@
 //#include "Test04_2.h"
 //#include "Test04_3.h"
 
-#include "Test05_1.h"
+//#include "Test05_1.h"
+
+//#include "Test07_1.h"
+//#include "Test07_2.h"
+
+#include "Test08_1.h"
 
 using namespace std;
 
+
 int main()
 {
+
    /* using namespace Test01_1;
     std::cout << Q1{ 1,2,3,4,5 }.Print() << std::endl;
     Q2().Print();
@@ -66,5 +73,42 @@ int main()
     //copy1.ShowNameCardInfo();
     //copy2.ShowNameCardInfo();
 
+    //Test07_1_1::HybridWaterCar c(55);
+    //c.GetElecGauge();
+    //c.GetGasGauge();
+    //c.ShowCurrentGauge();
 
+    //Test07_1_2::MyFriendDetailInfo info("Joh", "Iphone7", "Lee", 45);
+    //info.ShowMyFriendDetailInfo();
+    //info.ShowMyFriendInfo();
+
+    //using namespace Test07_2_1;
+    //Rectangle rec(4, 3);
+    //rec.ShowAreaInfo();
+    //Square sqr(7);
+    //sqr.ShowAreaInfo();
+
+    //using namespace Test07_2_2;
+    //Book book("좋은 C++", "555-12345-890-0", 20000);
+    //book.ShowBookInfo();
+    //cout << endl;
+    //EBook ebook("좋은 C++", "555-12345-890-1", 10000, "fdx9w0i8kiw");
+    //ebook.ShowBookInfo();
+
+    using namespace Test08_1;
+    EmployeeHandler handler;
+
+    ForeignSalesWorker* fseller1 = new ForeignSalesWorker("Hong", 1000, 0.1, eRISK_LEVEL::RISK_A);
+    fseller1->AddSalesResult(7000);
+    handler.AddEmployee(fseller1);
+
+    ForeignSalesWorker* fseller2 = new ForeignSalesWorker("Yoon", 1000, 0.1, eRISK_LEVEL::RISK_B);
+    fseller2->AddSalesResult(7000);
+    handler.AddEmployee(fseller2);
+
+    ForeignSalesWorker* fseller3 = new ForeignSalesWorker("Lee", 1000, 0.1, eRISK_LEVEL::RISK_C);
+    fseller2->AddSalesResult(7000);
+    handler.AddEmployee(fseller3);
+
+    handler.ShowAllSalaryInfo();
 }
