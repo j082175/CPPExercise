@@ -19,8 +19,12 @@
 
 //#include "Test07_1.h"
 //#include "Test07_2.h"
+//
+//#include "Test08_1.h"
+//
+//#include "Test10_1.h"
+//#include "Test10_2.h"
 
-#include "Test08_1.h"
 
 using namespace std;
 
@@ -95,20 +99,36 @@ int main()
     //EBook ebook("좋은 C++", "555-12345-890-1", 10000, "fdx9w0i8kiw");
     //ebook.ShowBookInfo();
 
-    using namespace Test08_1;
-    EmployeeHandler handler;
+    //using namespace Test08_1;
+    //EmployeeHandler handler;
 
-    ForeignSalesWorker* fseller1 = new ForeignSalesWorker("Hong", 1000, 0.1, eRISK_LEVEL::RISK_A);
-    fseller1->AddSalesResult(7000);
-    handler.AddEmployee(fseller1);
+    //ForeignSalesWorker* fseller1 = new ForeignSalesWorker("Hong", 1000, 0.1, eRISK_LEVEL::RISK_A);
+    //fseller1->AddSalesResult(7000);
+    //handler.AddEmployee(fseller1);
 
-    ForeignSalesWorker* fseller2 = new ForeignSalesWorker("Yoon", 1000, 0.1, eRISK_LEVEL::RISK_B);
-    fseller2->AddSalesResult(7000);
-    handler.AddEmployee(fseller2);
+    //ForeignSalesWorker* fseller2 = new ForeignSalesWorker("Yoon", 1000, 0.1, eRISK_LEVEL::RISK_B);
+    //fseller2->AddSalesResult(7000);
+    //handler.AddEmployee(fseller2);
 
-    ForeignSalesWorker* fseller3 = new ForeignSalesWorker("Lee", 1000, 0.1, eRISK_LEVEL::RISK_C);
-    fseller2->AddSalesResult(7000);
-    handler.AddEmployee(fseller3);
+    //ForeignSalesWorker* fseller3 = new ForeignSalesWorker("Lee", 1000, 0.1, eRISK_LEVEL::RISK_C);
+    //fseller2->AddSalesResult(7000);
+    //handler.AddEmployee(fseller3);
 
-    handler.ShowAllSalaryInfo();
+    //handler.ShowAllSalaryInfo();
+
+    /*using namespace Test10_1;
+    Point p1(1, 1);
+    Point p2(2, 2);
+    bool x = p1 == p2;
+    bool y = p1 != p2;
+    cout << x << " " << y << endl;
+    
+    Test10_2::Point p3(3, 3);
+    ++++p3;
+    p3.ShowPosition();
+    --(--p3);
+    const Test10_2::Point& p4 = -p3;
+    int a = 1;
+    */
+
 }
