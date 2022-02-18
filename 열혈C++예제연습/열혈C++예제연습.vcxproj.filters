@@ -36,6 +36,9 @@
     <Filter Include="헤더 파일\Chap10">
       <UniqueIdentifier>{fe05cb25-0fed-43b6-9b44-6337b6c6d671}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Chap11">
+      <UniqueIdentifier>{e69116e4-f4ac-47e8-b6d1-db1fe283502b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test01_1.cpp">
@@ -92,6 +95,12 @@
     <ClCompile Include="Test10_2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Test11_1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Test11_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Test02_2.h">
@@ -143,6 +152,12 @@
       <Filter>헤더 파일\Chap10</Filter>
     </ClInclude>
     <ClInclude Include="Test10_2.h">
+      <Filter>헤더 파일\Chap10</Filter>
+    </ClInclude>
+    <ClInclude Include="Test11_1.h">
+      <Filter>헤더 파일\Chap11</Filter>
+    </ClInclude>
+    <ClInclude Include="Test11_2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,5 +1,6 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <string>
 //#include "Test01_1.h"
 //#include "Test01_2.h"
 //#include "Test01_3.h"
@@ -25,7 +26,8 @@
 //#include "Test10_1.h"
 //#include "Test10_2.h"
 
-
+#include "Test11_1.h"
+#include "Test11_2.h"
 using namespace std;
 
 
@@ -131,4 +133,29 @@ int main()
     int a = 1;
     */
 
+    /*Test11_1_2::Book b("a", "b", 50);
+    Test11_1_2::EBook eb("r", "re", 55, "test");
+    b.ShowBookInfo();
+    cout << endl;
+    eb.ShowBookInfo();
+    cout << endl;
+    b = eb;
+    b.ShowBookInfo();
+    cout << endl;
+    Test11_1_2::Book b2(b);
+    b2.ShowBookInfo();*/
+
+    /*using namespace Test11_2_1;
+    Point p1(3, 4);
+    BoundCheckPointArray bound(4);
+    bound[0] = p1;
+    Point* p2 = new Point(5, 5);
+    bound[1] = *p2;
+
+    for (int i = 0; i < bound.GetArrLen(); i++)
+    {
+        cout << bound[i];
+    }*/
+
+    
 }
