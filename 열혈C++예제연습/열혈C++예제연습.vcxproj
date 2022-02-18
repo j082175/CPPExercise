@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="String.cpp" />
     <ClCompile Include="Test01_1.cpp" />
     <ClCompile Include="Test01_2.cpp" />
     <ClCompile Include="Test01_3.cpp" />
@@ -162,6 +163,7 @@
     <ClCompile Include="열혈C++예제연습.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="String.h" />
     <ClInclude Include="Test01_1.h" />
     <ClInclude Include="Test01_2.h" />
     <ClInclude Include="Test01_3.h" />

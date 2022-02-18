@@ -25,9 +25,11 @@
 //
 //#include "Test10_1.h"
 //#include "Test10_2.h"
+//
+//#include "Test11_1.h"
+//#include "Test11_2.h"
 
-#include "Test11_1.h"
-#include "Test11_2.h"
+#include "String.h"
 using namespace std;
 
 
@@ -157,5 +159,8 @@ int main()
         cout << bound[i];
     }*/
 
-    
+String s1("hoho");
+String s2("fuck you");
+String s3 = s1 + s2;
+cout << s3;
 }
