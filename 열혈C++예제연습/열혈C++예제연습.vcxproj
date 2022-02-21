@@ -160,6 +160,8 @@
     <ClCompile Include="Test10_2.cpp" />
     <ClCompile Include="Test11_1.cpp" />
     <ClCompile Include="Test11_2.cpp" />
+    <ClCompile Include="Test13_1.cpp" />
+    <ClCompile Include="Test13_2.cpp" />
     <ClCompile Include="열혈C++예제연습.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +185,8 @@
     <ClInclude Include="Test10_2.h" />
     <ClInclude Include="Test11_1.h" />
     <ClInclude Include="Test11_2.h" />
+    <ClInclude Include="Test13_1.h" />
+    <ClInclude Include="Test13_2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -29,6 +29,9 @@
 //#include "Test11_1.h"
 //#include "Test11_2.h"
 
+#include "Test13_1.h"
+#include "Test13_2.h"
+
 #include "String.h"
 using namespace std;
 
@@ -159,26 +162,63 @@ int main()
 		 cout << bound[i];
 	 }*/
 
-	//String str1 = "I like ";
-	//String str2 = "string class";
-	//String str3 = str1 + str2;
+	 //String str1 = "I like ";
+	 //String str2 = "string class";
+	 //String str3 = str1 + str2;
 
-	//cout << str1 << endl;
-	//cout << str2 << endl;
-	//cout << str3 << endl;
+	 //cout << str1 << endl;
+	 //cout << str2 << endl;
+	 //cout << str3 << endl;
 
-	//str1 += str2;
-	//if (str1 == str3)
+	 //str1 += str2;
+	 //if (str1 == str3)
+	 //{
+	 //	cout << "동일 문자열! " << endl;
+	 //}
+	 //else
+	 //{
+	 //	cout << "동일하지 않은 문자열!" << endl;
+	 //}
+
+	 //String str4;
+	 //cout << "문자열 입력: ";
+	 //cin >> str4;
+	 //cout << "입력한 문자열: " << str4 << endl;
+
+	//Test13_1_1::Point p(1, 2);
+	//Test13_1_1::Point p2(3, 4);
+	//p.ShowPosition();
+	//p2.ShowPosition();
+	//p.SwapData(p2);
+	//p.ShowPosition();
+	//p2.ShowPosition();
+
+	//Test13_1_2::Arr<int> arr(5);
+	//for (int i = 0; i < 5; i++)
 	//{
-	//	cout << "동일 문자열! " << endl;
+	//	arr[i] = i + 1;
 	//}
-	//else
-	//{
-	//	cout << "동일하지 않은 문자열!" << endl;
-	//}
+	//arr.PrintArray();
 
-	//String str4;
-	//cout << "문자열 입력: ";
-	//cin >> str4;
-	//cout << "입력한 문자열: " << str4 << endl;
+	//cout << Test13_1_2::SumArray<Test13_1_2::Arr<int>>(arr, 5) << endl;
+	//int* arr2 = new int[5];
+	//for (int i = 0; i < 5; i++)
+	//{
+	//	arr2[i] = i + 1;
+	//}
+	//cout << Test13_1_2::SumArray<int>(arr2, 5) << endl;
+
+	Test13_2::Point* p1 = new Test13_2::Point(3, 4);
+	Test13_2::SmartPtr<Test13_2::Point> ptr(p1);
+	ptr->ShowPosition();
+	(*ptr).ShowPosition();
+
+	Test13_2::SmartPtr<Test13_2::Point> sptr1(new Test13_2::Point(1, 2));
+	Test13_2::SmartPtr<Test13_2::Point> sptr2(new Test13_2::Point(3, 4));
+	sptr1->ShowPosition();
+	sptr2->ShowPosition();
+	sptr1->SetPos(10, 20);
+	sptr2->SetPos(30, 40);
+	sptr1->ShowPosition();
+	sptr2->ShowPosition();
 }
