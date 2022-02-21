@@ -16,21 +16,11 @@ namespace Test08_1
 	private:
 		char* mName;
 	public:
-		Employee(const char* name)
-		{
-			mName = new char[strlen(name) + 1];
-			strcpy(this->mName, name);
-		}
+		Employee(const char* name);
 
-		void ShowYourName()const
-		{
-			std::cout << "name: " << mName << std::endl;
-		}
+		void ShowYourName()const;
 
-		virtual int GetPay()const = 0
-		{
-			return 0;
-		}
+		virtual int GetPay()const = 0;
 
 		virtual void ShowSalaryInfo()const = 0;
 	};
@@ -40,20 +30,11 @@ namespace Test08_1
 	private:
 		int salary;
 	public:
-		PermanentWorker(const char* name, const int& money)
-			:Employee(name),salary(money)
-		{}
+		PermanentWorker(const char* name, const int& money);
 
-		int GetPay()const
-		{
-			return salary;
-		}
+		int GetPay()const;
 
-		void ShowSalaryInfo()const
-		{
-			ShowYourName();
-			std::cout << "salary: " << GetPay() << std::endl;
-		}
+		void ShowSalaryInfo()const;
 	};
 
 	class TemporaryWorker : public Employee
@@ -61,25 +42,13 @@ namespace Test08_1
 		int workTime;
 		int payPerHour;
 	public:
-		TemporaryWorker(const char* name,const int& money)
-			:Employee(name),payPerHour(money),workTime(0)
-		{}
+		TemporaryWorker(const char* name, const int& money);
 
-		void AddWorkTime(const int& time)
-		{
-			workTime += time;
-		}
+		void AddWorkTime(const int& time);
 
-		int GetPay()const
-		{
-			return workTime * payPerHour;
-		}
+		int GetPay()const;
 
-		void ShowSalaryInfo()const
-		{
-			ShowYourName();
-			std::cout << "salary: " << GetPay() << '\n' << std::endl;
-		}
+		void ShowSalaryInfo()const;
 
 
 	};
@@ -89,25 +58,13 @@ namespace Test08_1
 		int salesResult;
 		double bonusRatio;
 	public:
-		SalesWorker(const char* name, const int& money, const double& ratio)
-			:PermanentWorker(name,money),salesResult(0),bonusRatio(ratio)
-		{}
+		SalesWorker(const char* name, const int& money, const double& ratio);
 
-		void AddSalesResult(const int& value)
-		{
-			salesResult += value;
-		}
+		void AddSalesResult(const int& value);
 
-		int GetPay()const
-		{
-			return PermanentWorker::GetPay() + static_cast<int>(salesResult * bonusRatio);
-		}
+		int GetPay()const;
 
-		void ShowSalaryInfo()const
-		{
-			ShowYourName();
-			std::cout << "salary: " << GetPay() << '\n' << std::endl;
-		}
+		void ShowSalaryInfo()const;
 	};
 
 	class ForeignSalesWorker : public SalesWorker
@@ -115,27 +72,13 @@ namespace Test08_1
 	private:
 		eRISK_LEVEL mRiskPay;
 	public:
-		ForeignSalesWorker(const char* name, const int& salary,const double& ratio, eRISK_LEVEL risk)
-			:SalesWorker(name,salary,ratio),
-			mRiskPay(risk)
-		{
-		}
+		ForeignSalesWorker(const char* name, const int& salary, const double& ratio, eRISK_LEVEL risk);
 
-		~ForeignSalesWorker()
-		{
-		
-		}
+		~ForeignSalesWorker();
 
-		void ShowSalaryInfo()const
-		{
-			ShowYourName();
-			std::cout << "salary: " << GetPay() << '\n' << std::endl;
-		}
+		void ShowSalaryInfo()const;
 
-		int GetPay()const
-		{
-			return SalesWorker::GetPay() *( static_cast<double>(mRiskPay) / 100);
-		}
+		int GetPay()const;
 
 		
 	};
@@ -146,40 +89,15 @@ namespace Test08_1
 		Employee* empList[50];
 		int empNum;
 	public:
-		EmployeeHandler()
-			:empNum(0)
-		{
-		}
+		EmployeeHandler();
 
-		void AddEmployee(Employee* emp)
-		{
-			empList[empNum++] = emp;
-		}
+		void AddEmployee(Employee* emp);
 
-		void ShowAllSalaryInfo()const
-		{
-			for (int i = 0; i < empNum; i++)
-			{
-				empList[i]->ShowSalaryInfo();
-			}
-		}
+		void ShowAllSalaryInfo()const;
 
-		void ShowTotalSalary()const
-		{
-			int sum = 0;
-			for (int i = 0; i < empNum; i++)
-			{
-				sum += empList[i]->GetPay();
-			}
-		}
+		void ShowTotalSalary()const;
 
-		~EmployeeHandler()
-		{
-			for (int i = 0; i < empNum; i++)
-			{
-				delete empList[i];
-			}
-		}
+		~EmployeeHandler();
 
 
 	};

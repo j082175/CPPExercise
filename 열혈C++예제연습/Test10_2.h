@@ -8,15 +8,9 @@ namespace Test10_2
 	private:
 		int xpos, ypos;
 	public:
-		Point(const int& x = 0, const int& y = 0)
-			:xpos(x),
-			ypos(y)
-		{}
+		Point(const int& x = 0, const int& y = 0);
 
-		void ShowPosition()const
-		{
-			std::cout << '[' << xpos << "," << ypos << ']' << std::endl;
-		}
+		void ShowPosition()const;
 
 		Point& operator++()
 		{

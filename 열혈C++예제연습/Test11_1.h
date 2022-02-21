@@ -9,15 +9,9 @@ namespace Test11_1_1
 	private:
 		int bullet;
 	public:
-		Gun(const int& bnum)
-			:bullet(bnum)
-		{}
+		Gun(const int& bnum);
 
-		void Shot()
-		{
-			std::cout << "BBANG!" << std::endl;
-			bullet--;
-		}
+		void Shot();
 	};
 
 	class Police
@@ -26,31 +20,9 @@ namespace Test11_1_1
 		int handcuffs;
 		Gun* pistol;
 	public:
-		Police(const int& bnum, const int& bcuff)
-			:handcuffs(bcuff)
-		{
-			if (bnum > 0)
-			{
-				pistol = new Gun(bnum);
-			}
-			else
-			{
-				pistol = nullptr;
-			}
-		}
+		Police(const int& bnum, const int& bcuff);
 
-		Police(const Police& p)
-			:handcuffs(p.handcuffs)
-		{
-			if (p.pistol != nullptr)
-			{
-				this->pistol = new Gun(*(p.pistol));
-			}
-			else
-			{
-				this->pistol = nullptr;
-			}
-		}
+		Police(const Police& p);
 
 		Police& operator=(const Police& p)
 		{
@@ -67,31 +39,11 @@ namespace Test11_1_1
 		}
 
 
-		void PutHandcuff()
-		{
-			std::cout << "SNAP!" << std::endl;
-			handcuffs--;
-		}
+		void PutHandcuff();
 
-		void Shot()
-		{
-			if (pistol == nullptr)
-			{
-				std::cout << "Hut BBANG!" << std::endl;
-			}
-			else
-			{
-				pistol->Shot();
-			}
-		}
+		void Shot();
 
-		~Police()
-		{
-			if (pistol == nullptr)
-			{
-				delete pistol;
-			}
-		}
+		~Police();
 	};
 };
 
@@ -104,30 +56,11 @@ namespace Test11_1_2
 		char* isbn;
 		int price;
 	public:
-		Book(const char* t, const char* i, const int& price)
-			:price(price)
-		{
-			title = new char[strlen(t) + 1];
-			isbn = new char[strlen(i) + 1];
+		Book(const char* t, const char* i, const int& price);
 
-			strcpy(title, t);
-			strcpy(isbn, i);
-		}
+		~Book();
 
-		~Book()
-		{
-			delete[] title;
-			delete[] isbn;
-		}
-
-		Book(const Book& b)
-			:price(b.price)
-		{
-			title = new char[strlen(b.title) + 1];
-			isbn = new char[strlen(b.isbn) + 1];
-			strcpy(title, b.title);
-			strcpy(isbn, b.isbn);
-		}
+		Book(const Book& b);
 
 		Book& operator=(const Book& b)
 		{
@@ -142,11 +75,7 @@ namespace Test11_1_2
 			return *this;
 		}
 
-		virtual void ShowBookInfo()
-		{
-			std::cout << title << " " << isbn << " " <<
-				price << " ";
-		}
+		virtual void ShowBookInfo();
 	};
 
 	class EBook : public Book
@@ -155,24 +84,11 @@ namespace Test11_1_2
 		char* DRMKey;
 	public:
 		EBook(const char* t, const char* i, const int& price,
-			const char* key)
-			:Book(t, i, price)
-		{
-			DRMKey = new char[strlen(key) + 1];
-			strcpy(DRMKey, key);
-		}
+			const char* key);
 
-		~EBook()
-		{
-			delete[] DRMKey;
-		}
+		~EBook();
 
-		EBook(const EBook& eb)
-			:Book(eb)
-		{
-			DRMKey = new char[strlen(eb.DRMKey) + 1];
-			strcpy(DRMKey, eb.DRMKey);
-		}
+		EBook(const EBook& eb);
 
 		EBook& operator=(const EBook& eb)
 		{
@@ -183,10 +99,6 @@ namespace Test11_1_2
 			return *this;
 		}
 
-		virtual void ShowBookInfo()
-		{
-			Book::ShowBookInfo();
-			std::cout << DRMKey << " ";
-		}
+		virtual void ShowBookInfo();
 	};
 }

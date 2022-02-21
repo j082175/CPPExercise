@@ -8,20 +8,11 @@ namespace Test10_1
 	private:
 		int xpos, ypos;
 	public:
-		Point(const int& x = 0, const int& y = 0)
-			:xpos(x),
-			ypos(y)
-		{}
+		Point(const int& x = 0, const int& y = 0);
 
-		void ShowPosition()const
-		{
-			std::cout << '[' << xpos << ", " << ypos << ']' << std::endl;
-		}
+		void ShowPosition()const;
 
-		void changeXpos(const int& x)
-		{
-			xpos = x;
-		}
+		void changeXpos(const int& x);
 
 		friend Point operator+(const Point& pos1, const Point& pos2)
 		{

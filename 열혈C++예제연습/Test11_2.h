@@ -8,10 +8,7 @@ namespace Test11_2_1
 	private:
 		int xpos, ypos;
 	public:
-		Point(const int& x = 0, const int& y = 0)
-			:xpos(x),
-			ypos(y)
-		{}
+		Point(const int& x = 0, const int& y = 0);
 
 		friend std::ostream& operator<<(std::ostream& out, const Point& pos)
 		{
@@ -41,11 +38,7 @@ namespace Test11_2_1
 		//	return *this;
 		//}
 
-		BoundCheckPointArray(const int& len)
-			:arrlen(len)
-		{
-			arr = new Point[len];
-		}
+		BoundCheckPointArray(const int& len);
 
 		Point& operator[](const int& idx)
 		{
@@ -67,15 +60,9 @@ namespace Test11_2_1
 			return arr[idx];
 		}
 
-		int GetArrLen()const
-		{
-			return arrlen;
-		}
+		int GetArrLen()const;
 
-		~BoundCheckPointArray()
-		{
-			delete[] arr;
-		}
+		~BoundCheckPointArray();
 
 	};
 };
@@ -88,13 +75,7 @@ namespace Test11_2_2
 		const int mColumn;
 		int* arr;
 	public:
-		BoundCheck2DIntArray(const int& row, const int& column)
-			:mRow(row),
-			mColumn(column)
-		{
-			static const int a = column;
-			//arr = new int[mRow][4];
-		}
+		BoundCheck2DIntArray(const int& row, const int& column);
 		BoundCheck2DIntArray& operator[](const int& idx)
 		{
 			return *this;
