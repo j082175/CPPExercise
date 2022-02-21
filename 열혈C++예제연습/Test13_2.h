@@ -12,12 +12,12 @@ namespace Test13_2
 
 		~SmartPtr();
 
-		 T& operator*()
+		 T& operator*()const
 		{
 			return *posptr;
 		}
 
-		 T* operator->()
+		 T* operator->()const
 		{
 			return posptr;
 		}
