@@ -1,4 +1,5 @@
 #include "Test11_2.h"
+#pragma warning(disable:26495)
 
  Test11_2_1::Point::Point(const int& x, const int& y)
 	:xpos(x),

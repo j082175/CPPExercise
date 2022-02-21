@@ -86,7 +86,7 @@ namespace Test08_1
 	class EmployeeHandler
 	{
 	private:
-		Employee* empList[50];
+		Employee* empList[50] = {0,};
 		int empNum;
 	public:
 		EmployeeHandler();

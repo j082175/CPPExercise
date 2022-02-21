@@ -26,7 +26,7 @@ namespace Test11_2_1
 	class BoundCheckPointArray
 	{
 	private:
-		Point* arr;
+		Point* arr = nullptr;
 		int arrlen;
 		
 		BoundCheckPointArray(const BoundCheckPointArray& arr);
@@ -73,7 +73,7 @@ namespace Test11_2_2
 	{
 		const int mRow;
 		const int mColumn;
-		int* arr;
+		int* arr = nullptr;
 	public:
 		BoundCheck2DIntArray(const int& row, const int& column);
 		BoundCheck2DIntArray& operator[](const int& idx)

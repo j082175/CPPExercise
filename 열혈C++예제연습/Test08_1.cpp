@@ -88,14 +88,17 @@
 	std::cout << "salary: " << GetPay() << '\n' << std::endl;
 }
 
+#pragma warning(disable:4244)
  int Test08_1::ForeignSalesWorker::GetPay() const
 {
 	return SalesWorker::GetPay() * (static_cast<double>(mRiskPay) / 100);
 }
+#pragma warning(disable:4244)
 
  Test08_1::EmployeeHandler::EmployeeHandler()
 	:empNum(0)
 {
+
 }
 
  void Test08_1::EmployeeHandler::AddEmployee(Employee* emp)

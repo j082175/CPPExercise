@@ -6,28 +6,11 @@ class String
 {
 	char* mString = nullptr;
 public:
-	String(const char* string = "")
-	{
-		if (string != nullptr)
-		{
-			mString = new char[strlen(string) + 1];
-			strcpy(mString, string);
-		}
-	}
+	String(const char* string = "");
 
-	String(const String& string = "")
-	{
-		if (string.mString != nullptr)
-		{
-			mString = new char[strlen(string.mString) + 1];
-			strcpy(mString, string.mString);
-		}
-	}
+	String(const String& string = "");
 
-	~String()
-	{
-		delete[] mString;
-	}
+	~String();
 
 	String& operator=(const String& string)
 	{
@@ -40,25 +23,34 @@ public:
 		return *this;
 	}
 
-	String& operator+(const String& string)
+	String operator+(const String& string)
 	{
-		int size = strlen(mString) + strlen(string.mString) + 1;
-
-		mString = new char[size + 10];
+		char* newString;
+		std::size_t size = strlen(mString) + strlen(string.mString) + 1;
+		newString = new char[size];
+		strcpy(newString, mString);
 		
-		strcat(mString, string.mString);
-		return *this;
+		strcat(newString, string.mString);
+		return String(newString);
 	}
 
 	String& operator+=(const String& string)
 	{
-		strcat(mString, string.mString);
+		char* newString;
+		std::size_t size = strlen(mString) + strlen(string.mString) + 1;
+		newString = new char[size];
+		strcpy(newString, mString);
+		if(mString != nullptr)
+		delete[] mString;
+
+		strcat(newString, string.mString);
+		mString = newString;
 		return *this;
 	}
 
 	bool operator==(const String& string)
 	{
-		return strcmp(mString, string.mString);
+		return !strcmp(mString, string.mString);
 	}
 
 	friend std::ostream& operator<<(std::ostream& out, const String& string)
@@ -75,6 +67,7 @@ public:
 			mString = new char[strlen(string.mString) + 1];
 			strcpy(mString, string.mString);
 		}
+		return *this;
 	}
 
 	friend std::istream& operator>>(std::istream& in, String& string)
