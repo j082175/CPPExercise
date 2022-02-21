@@ -29,8 +29,8 @@
 //#include "Test11_1.h"
 //#include "Test11_2.h"
 
-#include "Test13_1.h"
-#include "Test13_2.h"
+//#include "Test13_1.h"
+//#include "Test13_2.h"
 
 #include "String.h"
 using namespace std;
@@ -208,17 +208,19 @@ int main()
 	//}
 	//cout << Test13_1_2::SumArray<int>(arr2, 5) << endl;
 
-	Test13_2::Point* p1 = new Test13_2::Point(3, 4);
-	Test13_2::SmartPtr<Test13_2::Point> ptr(p1);
-	ptr->ShowPosition();
-	(*ptr).ShowPosition();
+	//Test13_2::Point* p1 = new Test13_2::Point(3, 4);
+	//Test13_2::SmartPtr<Test13_2::Point> ptr(p1);
+	//ptr->ShowPosition();
+	//(*ptr).ShowPosition();
 
-	Test13_2::SmartPtr<Test13_2::Point> sptr1(new Test13_2::Point(1, 2));
-	Test13_2::SmartPtr<Test13_2::Point> sptr2(new Test13_2::Point(3, 4));
-	sptr1->ShowPosition();
-	sptr2->ShowPosition();
-	sptr1->SetPos(10, 20);
-	sptr2->SetPos(30, 40);
-	sptr1->ShowPosition();
-	sptr2->ShowPosition();
+	//Test13_2::SmartPtr<Test13_2::Point> sptr1(new Test13_2::Point(1, 2));
+	//Test13_2::SmartPtr<Test13_2::Point> sptr2(new Test13_2::Point(3, 4));
+	//sptr1->ShowPosition();
+	//sptr2->ShowPosition();
+	//sptr1->SetPos(10, 20);
+	//sptr2->SetPos(30, 40);
+	//sptr1->ShowPosition();
+	//sptr2->ShowPosition();
+
+
 }
